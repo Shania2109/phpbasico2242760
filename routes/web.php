@@ -60,14 +60,7 @@ Route::get('paises' , function(){
             "Poblacion" => "7"
         ]
     ];
-
-    foreach($paises as $pais ){
-
-    }
-
-    echo "<pre>";
-    print_r($pais);
-    echo "</pre>";
-    echo "<hr />";
-
+    //invocar la vista
+    //llevando los datos a ella
+    return view("paises")-> with("naciones" , $paises );
 });
